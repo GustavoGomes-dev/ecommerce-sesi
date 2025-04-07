@@ -43,6 +43,7 @@ public class Produto {
 
 	}
 
+
 	public Produto(Long id, String nome, String descricao, Double preco, String imgUrl) {
 		this.id = id;
 		this.nome = nome;
@@ -99,4 +100,12 @@ public class Produto {
 		return items.stream().map(x -> x.getPedido()).toList();
 	}
 
+
+	public Set<Categoria> getCategorias() {
+		return categorias;
+	}
+
+	public void setCategorias(Set<Categoria> categorias) {
+		this.categorias = categorias;
+	}
 }
